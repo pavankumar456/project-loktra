@@ -122,7 +122,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if(hasActiveInternetConnection(con)){downoading.start();}
-                else{Toast.makeText(con,"conntect to internet first",Toast.LENGTH_LONG).show();}
+                else{h.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        Toast.makeText(con, "conntect to internet first", Toast.LENGTH_LONG).show();
+                    }
+                });}
             }
         };
 
