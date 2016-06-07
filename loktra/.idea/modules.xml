@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.fasterxml.jackson.annotations/com.fasterxml.jackson.annotations.iml" filepath="$PROJECT_DIR$/com.fasterxml.jackson.annotations/com.fasterxml.jackson.annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.fasterxml.jackson.databind/com.fasterxml.jackson.databind.iml" filepath="$PROJECT_DIR$/com.fasterxml.jackson.databind/com.fasterxml.jackson.databind.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons-codec-1.7/commons-codec-1.7.iml" filepath="$PROJECT_DIR$/commons-codec-1.7/commons-codec-1.7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons-codec-1.7-sources/commons-codec-1.7-sources.iml" filepath="$PROJECT_DIR$/commons-codec-1.7-sources/commons-codec-1.7-sources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/github-api-1.75/github-api-1.75.iml" filepath="$PROJECT_DIR$/github-api-1.75/github-api-1.75.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jackson-core-2.2.2/jackson-core-2.2.2.iml" filepath="$PROJECT_DIR$/jackson-core-2.2.2/jackson-core-2.2.2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jackson-core-2.2.2-sources/jackson-core-2.2.2-sources.iml" filepath="$PROJECT_DIR$/jackson-core-2.2.2-sources/jackson-core-2.2.2-sources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-json/java-json.iml" filepath="$PROJECT_DIR$/java-json/java-json.iml" />
+      <module fileurl="file://$PROJECT_DIR$/loktra.iml" filepath="$PROJECT_DIR$/loktra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org-apache-commons-codec/org-apache-commons-codec.iml" filepath="$PROJECT_DIR$/org-apache-commons-codec/org-apache-commons-codec.iml" />
+      <module fileurl="file://$PROJECT_DIR$/org.apache.commons.io/org.apache.commons.io.iml" filepath="$PROJECT_DIR$/org.apache.commons.io/org.apache.commons.io.iml" />
+    </modules>
+  </component>
+</project>

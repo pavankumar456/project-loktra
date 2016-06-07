@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/com.fasterxml.jackson.annotations" />
+            <option value="$PROJECT_DIR$/com.fasterxml.jackson.databind" />
+            <option value="$PROJECT_DIR$/commons-codec-1.7" />
+            <option value="$PROJECT_DIR$/commons-codec-1.7-sources" />
+            <option value="$PROJECT_DIR$/github-api-1.75" />
+            <option value="$PROJECT_DIR$/jackson-core-2.2.2" />
+            <option value="$PROJECT_DIR$/jackson-core-2.2.2-sources" />
+            <option value="$PROJECT_DIR$/java-json" />
+            <option value="$PROJECT_DIR$/org-apache-commons-codec" />
+            <option value="$PROJECT_DIR$/org.apache.commons.io" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

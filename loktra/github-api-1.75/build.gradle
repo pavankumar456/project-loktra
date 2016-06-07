@@ -1,0 +1,2 @@
+configurations.create("default")
+artifacts.add("default", file('github-api-1.75.jar'))

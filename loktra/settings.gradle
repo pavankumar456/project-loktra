@@ -1,0 +1,1 @@
+include ':app', ':github-api-1.75', ':java-json', ':com.fasterxml.jackson.annotations', ':com.fasterxml.jackson.databind', ':commons-codec-1.7-sources', ':commons-codec-1.7', ':jackson-core-2.2.2-sources', ':jackson-core-2.2.2', ':org-apache-commons-codec', ':org.apache.commons.io'
