@@ -40,35 +40,44 @@ public class adapter extends RecyclerView.Adapter<adapter.ViewHolder> {
     public ArrayList<JSONObject> data = new ArrayList<JSONObject>();
     Context co;
     RequestQueue queue;
+
+
+
+
     public class ViewHolder extends RecyclerView.ViewHolder  {
 
+        LinearLayout root;
        LinearLayout front ;
         LinearLayout back ;
         ImageView iv ;
         TextView title ;
         boolean b ;
+        FlipAnimation flipAnimation ;
         TextView location ;
-        String tit = "not known";String tt = "not known";
+        String tit = "not known";
+        String tt = "not known";
         public ViewHolder(View v) {
             super(v);
+            root = (LinearLayout)v.findViewById(R.id.root);
             front = (LinearLayout)v.findViewById(R.id.imageviewlayout);
             back = (LinearLayout)v.findViewById(R.id.detailslayout);
             title = (TextView)v.findViewById(R.id.title);
             b = true ;
             location = (TextView)v.findViewById(R.id.location);
             iv = (ImageView)v.findViewById(R.id.textView);
-            back.bringToFront();
+
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                   if(b){
-                        b = false;
-                        back.bringToFront();
+
+                  //  System.err.println(tit+"4444444444"+tt);
+
+                    if (front.getVisibility() == View.GONE)
+                    {
+                        flipAnimation.reverse();
                     }
-                    else{
-                        b = true;
-                        front.bringToFront();
-                    }
+                    root.startAnimation(flipAnimation);
+
                 }
             });
             }
@@ -100,9 +109,6 @@ public class adapter extends RecyclerView.Adapter<adapter.ViewHolder> {
 
 
     public void onBindViewHolder(final ViewHolder holder, final int position) {
-        holder.location.setText("pavan");
-        holder.title.setText("kalyan");
-
         try{
 
           JSONObject response = data.get(position);
