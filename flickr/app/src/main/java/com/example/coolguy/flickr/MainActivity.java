@@ -34,7 +34,7 @@ import java.net.URLEncoder;
 public class MainActivity extends Activity {
     Context context ;
     String FlickrQuery_url = "https://api.flickr.com/services/rest/?method=flickr.photos.search";
-    String FlickrQuery_per_page = "&per_page=200";
+    String FlickrQuery_per_page = "&per_page=300";
     String FlickrQuery_nojsoncallback = "&nojsoncallback=1";
     String FlickrQuery_format = "&format=json";
     String FlickrQuery_tag = "&tags=";
@@ -110,7 +110,7 @@ public class MainActivity extends Activity {
                 // TODO Auto-generated method stub
                 try{
                     ++stopnow;
-                    if(response.getJSONObject("photos").getInt("pages") < response.getJSONObject("photos").getInt("page")){
+                   if(response.getJSONObject("photos").getInt("pages") < response.getJSONObject("photos").getInt("page")){
                         queue.add(adding());
                     }
 
@@ -118,6 +118,7 @@ public class MainActivity extends Activity {
                     for(int i = 0;i < ja.length();i++){
                         ad.add(ja.getJSONObject(i));
                     }
+                    rv.setAdapter(ad);
                 }
                 catch (Exception e){e.printStackTrace();}
             }
@@ -141,9 +142,6 @@ public class MainActivity extends Activity {
         try {
             JSONObject Json_photos = JsonObject.getJSONObject("photos");
             FlickrPhoto = Json_photos.getJSONArray("photo");
-
-
-
         } catch (JSONException e) {
             e.printStackTrace();
 

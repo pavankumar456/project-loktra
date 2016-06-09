@@ -57,6 +57,7 @@ public class adapter extends RecyclerView.Adapter<adapter.ViewHolder> {
             b = true ;
             location = (TextView)v.findViewById(R.id.location);
             iv = (ImageView)v.findViewById(R.id.textView);
+            back.bringToFront();
             v.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -98,7 +99,9 @@ public class adapter extends RecyclerView.Adapter<adapter.ViewHolder> {
 
 
 
-    public void onBindViewHolder(final ViewHolder holder, int position) {
+    public void onBindViewHolder(final ViewHolder holder, final int position) {
+        holder.location.setText("pavan");
+        holder.title.setText("kalyan");
 
         try{
 
@@ -145,8 +148,8 @@ public class adapter extends RecyclerView.Adapter<adapter.ViewHolder> {
             queue.add(sr);
             holder.location.setText(holder.tit);
             holder.title.setText(holder.tt);
-
-            Picasso.with(co).load(urlphoto).resize(holder.iv.getWidth(),holder.iv.getHeight()).into(holder.iv);
+           // System.err.println(holder.iv.getWidth() + "***********"+position);
+            Picasso.with(co).load(urlphoto).fit().into(holder.iv);
     }
     catch (Exception e){e.printStackTrace();}}
 }
