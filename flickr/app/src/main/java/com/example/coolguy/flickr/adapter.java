@@ -71,6 +71,7 @@ public class adapter extends RecyclerView.Adapter<adapter.ViewHolder> {
                 public void onClick(View v) {
 
                   //  System.err.println(tit+"4444444444"+tt);
+                    flipAnimation = new FlipAnimation(front, back,title,location,tt,tit);
 
                     if (front.getVisibility() == View.GONE)
                     {
